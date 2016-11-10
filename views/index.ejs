@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title><%- header %></title>
+  </head>
+  <body class = "container">
+    <h1><%- header %></h1>
+    <form action="/" method="post">
+      <div class="form-group">
+        <input type="text" class="form-control">
+      </div>
+        <input type="submit" class="btn btn-default">
+    </form>
+
+    <ul class = "tweet-container">
+      <div class="row">
+        <div class="names">
+          <span class ="full-name">Name</span>
+          <span class = "text">Text tweet here</span>
+        </div>
+      </div>
+    </ul>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+    <script src="/js/script.js" charset="utf-8"></script>
+  </body>
+</html>
